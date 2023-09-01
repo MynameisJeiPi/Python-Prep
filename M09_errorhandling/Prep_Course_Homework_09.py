@@ -38,7 +38,17 @@
 
 
 # 6) Agregar casos de pruebas para el método verifica_primos() realizando el cambio en la clase, para que devuelva una lista de True o False en función de que el elemento en la posisicón sea o no primo
+import unittest
 
+class ProbarPrimos(unittest.TestCase):
+    def probar_primos():
+        h_prim = Herramientas([1,2,3])
+        primos = h_prim.primo()
+        resultado = ["1 es primo","2 es primo","3 es primo"]
+        self.assertEqual(primos,resultado)
+
+
+unittest.main(argv=[""], verbosity=2, exit=False)
 # In[14]:
 
 
